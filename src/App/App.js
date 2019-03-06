@@ -151,6 +151,8 @@ class App extends Component {
   }
 
   render() {
+    console.log('test push 1')
+    console.log(process.env)
     return (
       <div className='App'>
         <nav className='App__nav'>
