@@ -29,10 +29,11 @@ export default class Note extends Component {
   }
 
   render(){
+    console.log('Note Route:', `${process.env.PUBLIC_URL}/note/${this.props.id}`)
     return (
       <div className='Note'>
         <h2 className='Note__title'>
-          < Link to = {`/note/${this.props.id}`} >
+          <Link to={`/note/${this.props.id}`}>
             {this.props.name}
           </Link>
         </h2>
